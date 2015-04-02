@@ -102,7 +102,7 @@ int main() {
     LATBINV = 0x0080; // invert a pin
 
     // wait for half a second, setting LED brightness to pot angle while waiting
-    while (_CP0_GET_COUNT() < 5000000) {
+    while (_CP0_GET_COUNT() < 10000000) {
         
         OC1RS = readADC() * PR2/1024;
 
